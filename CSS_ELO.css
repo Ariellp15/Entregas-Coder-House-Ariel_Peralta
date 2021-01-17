@@ -1,0 +1,36 @@
+h1{
+    color:whitesmoke;
+    background-color:navy;
+    font-family: inherit; 
+}
+
+h2{
+    color:whitesmoke;
+    background-color: navy;
+    font-family: inherit;
+}
+p{
+    color:navy;
+    font-family:inherit;
+}
+.EstiloVideos{
+    border-color: navy;
+    border-style:dotted;
+    border-width: 2px;
+
+}
+.EstiloImagenes{
+    border-color: navy;
+    border-style:double;
+    border-width: 10px;
+}
+#Protagonistas{
+    color: whitesmoke;
+    background-color: navy;
+    font-family: inherit;
+}
+ul li{
+    color: blueviolet;
+    font-family: inherit;
+    align-content: center;
+}
