@@ -1,0 +1,365 @@
+$title-font: uppercase;
+$main-font: "Montserrat", sans-serif;
+$title-color: whitesmoke;
+$color-fondo-base:#05032b;
+$color-fondo-secundario:1683f5;
+
+/*Titles*/
+h1{
+    text-transform: $title-font;
+    font-family: $main-font;
+    color: $title-color;
+    font-size: 300%;
+}
+h2{
+    text-transform: $title-font;
+    font-family: $main-font;
+    color: $title-color;
+}
+h3{
+    text-transform: $title-font;
+    font-family: $main-font;
+    color: $title-color;
+
+}
+h4{
+    text-transform: $title-font;
+    font-family: $main-font;
+    color: $title-color;
+}
+
+h5{
+    text-transform: $title-font;
+    font-family: $main-font;
+    color: $title-color;   
+}
+
+/*Main menu*/
+ul{
+    ul{
+        position: absolute;
+        display: none;
+        li{
+            display: block;
+
+        }
+    }
+}
+li{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    margin: 5px;
+    padding: 5px;
+    color: whitesmoke;
+}
+ul li:hover ul{
+    display: block;
+    width: 500px;
+    background-color: $color-fondo-base;
+}
+a:hover ul{
+    display: block;
+    width: 500px;
+    color:$color-fondo-base;
+}
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+  }
+
+/*Tables*/
+table{
+    display: flex;
+    justify-content: center;
+    border: none;
+    font-family: $main-font;
+    td{
+        text-align: center;
+        color: whitesmoke
+    }
+}
+
+/*Lists*/
+section#curiosidades{
+    li{
+        display: inline-block;
+        position: relative;
+        font-size:14px;
+        font-family: "Montserrat", sans-serif;
+        margin: 5px;
+        padding: 5px;
+        color: whitesmoke;
+    }
+}
+/*Imagenes*/
+.imgSlider{
+    width:60%;
+    height: 60%;
+    margin: auto;
+}
+
+.cardBackground{
+    background-color: #05032b;
+}
+
+/*Texts expecifications*/
+.textoCentrado{
+    text-align: center;
+}
+.textoIzquierda{
+    text-align: left;
+}
+
+#grilla{
+    p{
+    color: whitesmoke;
+    font-family: $main-font}
+}
+
+#grilla{
+    div{
+        p{
+            a{
+                color: lightblue;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+section#autor{
+    p{
+        a{
+            color: $title-color;
+            font-weight: bold;
+        }
+    }
+}
+
+.formatosLectura{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-content: center;
+}
+/*Grilla Home*/
+#grilla{
+    display:grid;
+    grid-template-areas:
+    "header header header"
+    "titulo titulo titulo"
+    "intro intro multimedia"
+    "autor autor autor"
+    "protagonistas1 protagonistas1 protagonistas1"
+    "protagonistas protagonistas protagonistas"
+    "pie pie pie";
+    grid-template-columns: 25% auto 40%;
+    grid-template-rows: auto auto 2fr 0.5fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);      
+}
+header {
+    grid-area: header;
+}
+section#titulo{
+    grid-area: titulo;
+}
+section#intro{
+    grid-area: intro;
+    align-items: center;
+    justify-items: center;
+}
+aside {
+    grid-area: multimedia;
+    text-align: center;
+    padding: 5%;
+    border-width: 10px;
+    margin: 1vh;
+}
+section#autor {
+    grid-area: autor;
+}
+section#protagonistas1{
+    grid-area: protagonistas1;
+    background-color:$color-fondo-base;
+}
+section#curiosidades{
+    background-position: 50% 68%;
+    font-weight: bold;
+    grid-area: pie; 
+}
+section#protagonistas{
+    grid-area: protagonistas;
+    text-align: center;
+}
+
+.header__logo{
+    border: 5px;
+    padding: 1%;
+}
+.header__menu{
+text-transform: $title-font;
+}
+.header__subMenu{
+    color: lightblue;
+    text-transform: $title-font;
+}
+.header__logoRrss{
+    border-radius: 30%;
+    padding: 1%;
+}
+/*Grilla Protagonistas*/
+#grillaProtagonistas{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "cuerpoProtagonistas cuerpoProtagonistas cuerpoProtagonistas"
+    "pie pie pie" ;
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-position: top;
+    background-size: contain;
+    background-color: #05032b;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);    
+}
+
+section#cuerpoProtagonistas{
+    grid-area: cuerpoProtagonistas;
+}
+
+
+
+/*Grilla Sinopsis*/
+
+#grillaSinopsis{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "cuerpoSinopsis cuerpoSinopsis cuerpoSinopsis"
+    "pie pie pie" ;
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-position: top;
+    background-size: contain;
+    background-color: #05032b;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);    
+}
+section#cuerpoSinopsis{
+    grid-area: cuerpoSinopsis;
+}
+#Sinopsis{
+    background-image: url("Imagenes/pergamino_antiguo.jpg");
+    background-size: cover;
+    font-size: 150%;
+    text-align: center;
+    margin: 0 20%;
+    padding: 0 5%;
+    font-family: "Montserrat", sans-serif;
+}
+section#cuerpoSinopsis{
+    p{
+        color: whitesmoke;
+    }
+}
+
+/*Grilla Contacto*/
+#grillaContacto{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "contenidoContacto contenidoContacto contenidoContacto"
+    "pie pie pie" ;
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-position: top;
+    background-size: contain;
+    background-color: #05032b;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);    
+}
+section#contenidoContacto{
+    grid-area: contenidoContacto;
+}
+section#contenidoContacto p{
+    color: whitesmoke;
+}
+section#contenidoContacto label{
+    color: whitesmoke;
+}
+
+/*Grilla Como Leer*/
+#grillaComoLeer{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "comoLeer comoLeer comoLeer"
+    "pie pie pie" ;
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-position: top;
+    background-size: contain;
+    background-color: #05032b;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);    
+}
+section#comoLeer{
+    grid-area: comoLeer;
+}
+section#comoLeer p{
+    color: whitesmoke;
+}
+/*Grilla Autor*/
+#grillaAutor{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "tituloAutor descripcionAutor descripcionAutor"
+    "cuerpo descripcionAutor descripcionAutor"
+    "pie pie pie" ;
+    grid-template-columns: 40% auto 20%;
+    grid-template-rows: auto auto auto auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-position: top;
+    background-size: contain;
+    background-color: #05032b;
+    background-image: linear-gradient(180deg, #05032b 25%, #1683f5 100%);    
+}
+header{
+    grid-area: header;
+}
+section#cuerpo{
+    grid-area: cuerpo;
+    text-align: center;
+}
+section#tituloAutor{
+    grid-area: tituloAutor;
+}
+section#descripcionAutor{
+    grid-area: descripcionAutor;
+    text-align: center;
+}
+section#descripcionAutor p{
+    color: whitesmoke;
+}
+section#pie{
+    grid-area: pie;
+}
+section#pie{
+    div{
+        p{
+    color: whitesmoke;
+        }
+    }
+}
+
+
