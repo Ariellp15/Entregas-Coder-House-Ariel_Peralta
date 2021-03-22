@@ -1954,6 +1954,9 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+  .video{
+    max-width: 70%;
+  }
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
@@ -1964,6 +1967,9 @@ pre code {
   }
   .table-responsive-md > .table-bordered {
     border: 0;
+  }
+  .video{
+    max-width: 70%;
   }
 }
 @media (max-width: 991.98px) {
@@ -1976,6 +1982,9 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+  .video{
+    max-width: 70%;
+  }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
@@ -1986,6 +1995,9 @@ pre code {
   }
   .table-responsive-xl > .table-bordered {
     border: 0;
+  }
+  .video{
+    max-width: 70%;
   }
 }
 .table-responsive {
